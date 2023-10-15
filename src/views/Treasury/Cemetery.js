@@ -143,13 +143,13 @@ const Cemetery = () => {
                     <Card style={{ height: "auto" }}>
                       <CardContent align="center">
                         <Typography variant="h5">
-                          3OMB:
+                          CBD:
                         </Typography>
                         <CountUp style={{ fontSize: '25px' }} end={balance_3omb} separator="," prefix="$" />
                       </CardContent>
                       <CardContent align="center">
                         <Typography variant="h5">
-                          3SHARES:
+                          CBS:
                         </Typography>
                         <CountUp style={{ fontSize: '25px' }} end={balance_3shares} separator="," prefix="$" />
                       </CardContent>

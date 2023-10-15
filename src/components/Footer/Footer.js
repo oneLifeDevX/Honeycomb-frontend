@@ -14,7 +14,7 @@ const useStyles = makeStyles((theme) => ({
     paddingTop: '15px',
     paddingBottom: '15px',
     width: '100%',
-    color: 'var(--white)',
+    color: '#00000',
     backgroundColor: 'transparent',
     textAlign: 'center',
     height: '1.3rem',
@@ -27,7 +27,7 @@ const useStyles = makeStyles((theme) => ({
     height: '24px',
     display: 'inline',
     marginLeft: '20px',
-    filter: 'sepia(1) brightness(2) hue-rotate(314deg) saturate(7.5)'
+    filter: 'brightness(0) hue-rotate(314deg) '
   },
 
   img: {
@@ -43,8 +43,8 @@ const Footer = () => {
       <Container maxWidth="lg">
         <Grid container>
           <Grid item xs={6}>
-            <Typography variant="body2" color="textPrimary" align="left">
-              {'Copyright © 3omb Finance '}
+            <Typography variant="body2" color="#000000" align="left">
+              {'Copyright © Central Bank Finance '}
               {new Date().getFullYear()}
             </Typography>
           </Grid>
@@ -68,14 +68,14 @@ const Footer = () => {
             <a href="https://t.me/community2ombchat" rel="noopener noreferrer" target="_blank" className={classes.link}>
               <img alt="telegram" src={TelegramImage} className={classes.img} />
             </a>
-            <a
+            {/* <a
               href="https://www.youtube.com/results?search_query=2omb+finance"
               rel="noopener noreferrer"
               target="_blank"
               className={classes.link}
             >
               <img alt="youtube" src={YoutubeImage} className={classes.img} />
-            </a>
+            </a> */}
             <a href="https://discord.gg/pPpc9p5NS8" rel="noopener noreferrer" target="_blank" className={classes.link}>
               <img alt="discord" src={DiscordImage} className={classes.img} />
             </a>

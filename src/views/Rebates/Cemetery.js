@@ -106,7 +106,7 @@ const Cemetery = () => {
                     <Card className={classes.gridItem}>
                       <CardContent align="center">
                         <Typography variant="h5">
-                          3OMB Price <small>(TWAP)</small>
+                          CBD Price <small>(TWAP)</small>
                         </Typography>
                         <Typography variant="h6">{rebateStats.tombPrice.toFixed(3)} FTM</Typography>
                       </CardContent>
@@ -144,7 +144,7 @@ const Cemetery = () => {
                     <Card style={{ height: "auto" }}>
                       <CardContent align="center">
                         <Typography variant="h5">
-                          3OMB Vesting
+                          CBD Vesting
                         </Typography>
                         <Typography variant="h6">{vested.toFixed(4)} Total Vested</Typography>
                         <Typography variant="h6">{claimable3omb.toFixed(4)} Claimable</Typography>

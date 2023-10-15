@@ -14,6 +14,7 @@ import { createGlobalStyle } from 'styled-components';
 
 import useBanks from '../../hooks/useBanks';
 
+
 // const BackgroundImage = createGlobalStyle`
 //   body {
 //     background-color: #ffffff;
@@ -44,14 +45,14 @@ const Cemetery = () => {
           <BackgroundImage />
           {!!account ? (
             <Container maxWidth="lg">
-              <Typography color="textPrimary" align="center" variant="h3" gutterBottom>
-                3Farms
+              <Typography color="#000000" align="center" variant="h3" gutterBottom>
+                Farms
               </Typography>
 
               <Box mt={5}>
                 <div hidden={activeBanks.filter((bank) => bank.sectionInUI === 2).length === 0}>
-                  <Typography color="textPrimary" variant="h4" gutterBottom>
-                    Earn 3SHARES by staking LP Tokens
+                  <Typography color="#00000" variant="h4" gutterBottom>
+                    Earn CBS by staking LP Tokens
                   </Typography>
                   <Grid container spacing={3}>
                     {activeBanks
@@ -87,7 +88,7 @@ const Cemetery = () => {
                 </Alert>
 
                 <div hidden={activeBanks.filter((bank) => bank.sectionInUI === 0).length === 0}>
-                  <Typography color="textPrimary" variant="h4" gutterBottom style={{ marginTop: '15px', marginBottom: '30px' }}>
+                  <Typography color="#00000" variant="h4" gutterBottom style={{ marginTop: '15px', marginBottom: '30px' }}>
                     Genesis Pools
                   </Typography>
                   <Grid container spacing={3}>

@@ -36,7 +36,7 @@ const useStyles = makeStyles((theme) => ({
   },
   appBar: {
     color: 'var(--white)',
-    'background-color': '#ff494922',
+    'background-color': '#007cff6e',
     'backdrop-filter': "blur(2px)",
     // borderBottom: `1px solid ${theme.palette.divider}`,
     padding: '0 10px',
@@ -102,7 +102,7 @@ const Nav = () => {
             <Typography variant="h6" color="inherit" noWrap className={classes.toolbarTitle}>
               {/* <a className={ classes.brandLink } href="/">2omb Finance</a> */}
               <Link to="/" color="inherit" className={classes.brandLink}>
-                3omb Finance
+                Central Bank Finance
               </Link>
             </Typography>
             <Box mr={5}>
@@ -110,17 +110,17 @@ const Nav = () => {
                 Home
               </Link>
               <Link color="textPrimary" to="/farms" className={classes.link}>
-                3Farms
+                Farms
               </Link>
               <Link color="textPrimary" to="/boardroom" className={classes.link}>
-                3Room
+                Room
               </Link>
               <Link color="textPrimary" to="/bonds" className={classes.link}>
-                3Bonds
+                Bonds
               </Link>
-              <Link color="textPrimary" to="/rebates" className={classes.link}>
+              {/* <Link color="textPrimary" to="/rebates" className={classes.link}>
                 3DAO
-              </Link>
+              </Link> */}
               <Link color="textPrimary" to="/treasury" className={classes.link}>
                 Treasury
               </Link>
@@ -139,18 +139,18 @@ const Nav = () => {
               <Link color="textPrimary" to="/regulations" className={classes.link}>
                 Regulations
               </Link> */}
-              <a href="https://beluga.fi" target="_blank" className={classes.link}>
+              {/* <a href="https://beluga.fi" target="_blank" className={classes.link}>
                 Vaults
               </a>
               <a href="https://snapshot.org/#/forgiving.forg.eth" target="_blank" className={classes.link}>
                 Governance
-              </a>
+              </a> */}
               <a href="https://gedeon-crypto.gitbook.io/3omb.finance/" target="_blank" className={classes.link}>
                 Docs
               </a>
-              <a href="https://2omb.finance" target="_blank" className={classes.link}>
+              {/* <a href="https://2omb.finance" target="_blank" className={classes.link}>
                 2omb
-              </a>
+              </a> */}
             </Box>
             <AccountButton text="Connect" />
           </>
@@ -166,7 +166,7 @@ const Nav = () => {
               <MenuIcon />
             </IconButton>
             <Typography variant="h6" noWrap>
-              3omb Finance
+              Central Bank Finance
             </Typography>
 
             <Drawer
@@ -188,10 +188,10 @@ const Nav = () => {
               <Divider />
               <List>
                 <ListItemLink primary="Home" to="/" />
-                <ListItemLink primary="3Farms" to="/farms" />
-                <ListItemLink primary="3Room" to="/boardroom" />
-                <ListItemLink primary="3Bonds" to="/bonds" />
-                <ListItemLink primary="3DAO" to="/rebates" />
+                <ListItemLink primary="Farms" to="/farms" />
+                <ListItemLink primary="Room" to="/boardroom" />
+                <ListItemLink primary="Bonds" to="/bonds" />
+                <ListItemLink primary="DAO" to="/rebates" />
                 <ListItemLink primary="Treasury" to="/treasury" />
                 {/* <ListItemLink primary="Masonry" to="/masonry" />
                 <ListItemLink primary="Pit" to="/pit" />

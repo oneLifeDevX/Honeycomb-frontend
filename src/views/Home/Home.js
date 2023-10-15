@@ -1,7 +1,7 @@
 import React, { useMemo } from 'react';
 import Page from '../../components/Page';
 import HomeImage from '../../assets/img/home.png';
-import CashImage from '../../assets/img/3OMB.svg';
+import CashImage from '../../assets/img/bank.png';
 import Image from 'material-ui-image';
 import styled from 'styled-components';
 import { Alert } from '@material-ui/lab';
@@ -114,7 +114,7 @@ const Home = () => {
   const StyledLink = styled.a`
     font-weight: 700;
     text-decoration: none;
-    color: var(--accent-light);
+    color: blue;
   `;
 
   const [onPresentTombZap, onDissmissTombZap] = useModal(
@@ -148,19 +148,17 @@ const Home = () => {
         {/* Logo */}
         <Grid container item xs={12} sm={4} justify="center">
           {/* <Paper>xs=6 sm=3</Paper> */}
-          <Image color="none" style={{ width: '300px', paddingTop: '0px' }} src={CashImage} />
+          <Image color="none" style={{ width: '200px', paddingTop: '0px' }} src={CashImage} />
         </Grid>
         {/* Explanation text */}
         <Grid item xs={12} sm={8}>
-          <Paper style={{ backgroundColor: "transparent", boxShadow: "none", border: "1px solid var(--white)" }}>
+          <Paper style={{ backgroundColor: "blue !important", boxShadow: "none", border: "1px solid blue" }}>
             <Box p={4}>
-              <h2>Welcome to 3omb Finance!</h2>
-              <p>An algorithmic stablecoin on the Fantom Opera blockchain, pegged to the price of 1 FTM</p>
-              <p>3omb utilizes multiple bonding mechanisms at the <StyledLink href="/">3DAO</StyledLink> as well as seigniorage.</p>
-              <p>Built on top of <StyledLink target="_blank" href="https://2omb.finance">2omb.finance</StyledLink>.</p>
+              <h2>Welcome to Central Bank Finance!</h2>
+              <p>An algorithmic stablecoin on the Arbitrum blockchain, pegged to the price of 1 ARB</p>
               <p>
-                Stake your 3OMB-WFTM LP in the <StyledLink href="/farms">3Farms</StyledLink> to earn 3SHARES rewards.
-                Then stake your earned 3SHARES in the <StyledLink href="/">3Room</StyledLink> to maximize profits!
+                Stake your CBD-WARB LP in the <StyledLink href="/farms">Farms</StyledLink> to earn CBS rewards.
+                Then stake your earned CBS in the <StyledLink href="/">Room</StyledLink> to maximize profits!
               </p>
             </Box>
           </Paper>
@@ -172,7 +170,7 @@ const Home = () => {
         <Grid container justify="center">
             <Box mt={3} style={{ width: '1000px' }}>
             <Alert variant="filled" severity="warning">
-                Do your own research before investing. Investing is risky and may result in monetary loss. 3omb is beta software and may contain bugs. By using 3omb, you agree that the 2omb and 3omb team is not responsible for any financial losses from investing in 2omb or 3omb.
+                Do your own research before investing. Investing is risky and may result in monetary loss. Central Bank Finance is beta software and may contain bugs. By using Central Bank Finance, you agree Central Bank Finance team is not responsible for any financial losses from investing Central Bank Finance.
             </Alert>
             </Box>
         </Grid>
@@ -188,7 +186,7 @@ const Home = () => {
 
         {/* TVL */}
         <Grid item xs={12} sm={4}>
-          <Card style={{ backgroundColor: "transparent", boxShadow: "none", border: "1px solid var(--white)" }}>
+          <Card style={{ backgroundColor: "transparent", boxShadow: "none", border: "1px solid blue" }}>
             <CardContent align="center">
               <h2>Total Value Locked</h2>
               <CountUp style={{ fontSize: '25px' }} end={totalTVL} separator="," prefix="$" />
@@ -198,7 +196,7 @@ const Home = () => {
 
         {/* Wallet */}
         <Grid item xs={12} sm={8}>
-          <Card style={{ height: '100%', backgroundColor: "transparent", boxShadow: "none", border: "1px solid var(--white)", display: "flex", flexDirection: "column", justifyContent: "center", alignItems: "center" }}>
+          <Card style={{ height: '100%', backgroundColor: "transparent", boxShadow: "none", border: "1px solid blue", display: "flex", flexDirection: "column", justifyContent: "center", alignItems: "center" }}>
             <CardContent align="center">
               {/* <h2 style={{ marginBottom: '20px' }}>Wallet Balance</h2> */}
               <Button color="primary" href="/farms" variant="contained" style={{ marginRight: '10px' }}>
@@ -220,16 +218,16 @@ const Home = () => {
                 style={{ marginRight: '10px' }}
                 className={classes.button}
               >
-                Buy 3OMB
+                Buy CBD
               </Button>
               <Button variant="contained" target="_blank" href="https://spookyswap.finance/swap?outputCurrency=0x6437adac543583c4b31bf0323a0870430f5cc2e7" style={{ marginRight: '10px' }} className={classes.button}>
-                Buy 3SHARES
+                Buy CBS
               </Button>
               <Button variant="contained" target="_blank" href="https://dexscreener.com/fantom/0x83a52eff2e9d112e9b022399a9fd22a9db7d33ae" style={{ marginRight: '10px' }} className={classes.button}>
-                3OMB Chart
+                CBD Chart
               </Button>
               <Button variant="contained" target="_blank" href="https://dexscreener.com/fantom/0xd352dac95a91afefb112dbbb3463ccfa5ec15b65" className={classes.button}>
-                3SHARES Chart
+                CBS Chart
               </Button>
             </CardContent>
           </Card>
@@ -237,12 +235,12 @@ const Home = () => {
 
         {/* TOMB */}
         <Grid item xs={12} sm={3}>
-          <Card style={{ backgroundColor: "transparent", boxShadow: "none", border: "1px solid var(--white)" }}>
+          <Card style={{ backgroundColor: "transparent", boxShadow: "none", border: "1px solid blue" }}>
             <CardContent align="center" style={{ position: 'relative' }}>
-              <h2>FTM</h2>
+              <h2>ARB</h2>
               <Box mt={2} style={{ backgroundColor: "transparent !important" }}>
                 <CardIcon style={{ backgroundColor: "transparent !important" }}>
-                  <TokenSymbol symbol="wFTM" style={{ backgroundColor: "transparent !important" }} />
+                  <TokenSymbol symbol="ETH" style={{ backgroundColor: "transparent !important" }} />
                 </CardIcon>
               </Box>
               Current Price
@@ -261,9 +259,9 @@ const Home = () => {
 
         {/* TOMB */}
         <Grid item xs={12} sm={3}>
-          <Card style={{ backgroundColor: "transparent", boxShadow: "none", border: "1px solid var(--white)" }}>
+          <Card style={{ backgroundColor: "transparent", boxShadow: "none", border: "1px solid blue" }}>
             <CardContent align="center" style={{ position: 'relative' }}>
-              <h2>3OMB</h2>
+              <h2>CBD</h2>
               {/* <Button
                 onClick={() => {
                   tombFinance.watchAssetInMetamask('TOMB');
@@ -282,7 +280,7 @@ const Home = () => {
               </Box>
               Current Price
               <Box>
-                <span style={{ fontSize: '30px' }}>{tombPriceInFTM ? tombPriceInFTM : '-.----'} FTM</span>
+                <span style={{ fontSize: '30px' }}>{tombPriceInFTM ? tombPriceInFTM : '-.----'} ARB</span>
               </Box>
               <Box>
                 <span style={{ fontSize: '16px', alignContent: 'flex-start' }}>
@@ -300,9 +298,9 @@ const Home = () => {
 
         {/* TSHARE */}
         <Grid item xs={12} sm={3}>
-          <Card style={{ backgroundColor: "transparent", boxShadow: "none", border: "1px solid var(--white)" }}>
+          <Card style={{ backgroundColor: "transparent", boxShadow: "none", border: "1px solid blue" }}>
             <CardContent align="center" style={{ position: 'relative' }}>
-              <h2>3SHARES</h2>
+              <h2>CBS</h2>
               {/* <Button
                 onClick={() => {
                   tombFinance.watchAssetInMetamask('TSHARE');
@@ -321,7 +319,7 @@ const Home = () => {
               </Box>
               Current Price
               <Box>
-                <span style={{ fontSize: '30px' }}>{tSharePriceInFTM ? tSharePriceInFTM : '-.----'} FTM</span>
+                <span style={{ fontSize: '30px' }}>{tSharePriceInFTM ? tSharePriceInFTM : '-.----'} ARB</span>
               </Box>
               <Box>
                 <span style={{ fontSize: '16px' }}>${tSharePriceInDollars ? tSharePriceInDollars : '-.--'}</span>
@@ -337,9 +335,9 @@ const Home = () => {
 
         {/* TBOND */}
         <Grid item xs={12} sm={3}>
-          <Card style={{ backgroundColor: "transparent", boxShadow: "none", border: "1px solid var(--white)" }}>
+          <Card style={{ backgroundColor: "transparent", boxShadow: "none", border: "1px solid blue" }}>
             <CardContent align="center" style={{ position: 'relative' }}>
-              <h2>3BOND</h2>
+              <h2>CBB</h2>
               {/* <Button
                 onClick={() => {
                   tombFinance.watchAssetInMetamask('TBOND');
@@ -358,7 +356,7 @@ const Home = () => {
               </Box>
               Current Price
               <Box>
-                <span style={{ fontSize: '30px' }}>{tBondPriceInFTM ? tBondPriceInFTM : '-.----'} FTM</span>
+                <span style={{ fontSize: '30px' }}>{tBondPriceInFTM ? tBondPriceInFTM : '-.----'} ARB</span>
               </Box>
               <Box>
                 <span style={{ fontSize: '16px' }}>${tBondPriceInDollars ? tBondPriceInDollars : '-.--'}</span>
@@ -372,9 +370,9 @@ const Home = () => {
           </Card>
         </Grid>
         <Grid item xs={12} sm={6}>
-          <Card style={{ backgroundColor: "transparent", boxShadow: "none", border: "1px solid var(--white)" }}>
+          <Card style={{ backgroundColor: "transparent", boxShadow: "none", border: "1px solid blue" }}>
             <CardContent align="center">
-              <h2>3OMB-WFTM Spooky LP</h2>
+              <h2>CBD-ARB TraderJoe LP</h2>
               <Box mt={2}>
                 <CardIcon>
                   <TokenSymbol symbol="TOMB-FTM-LP" />
@@ -388,8 +386,8 @@ const Home = () => {
               </Box>*/}
               <Box mt={2}>
                 <span style={{ fontSize: '26px' }}>
-                  {tombLPStats?.tokenAmount ? tombLPStats?.tokenAmount : '-.--'} 3OMB /{' '}
-                  {tombLPStats?.ftmAmount ? tombLPStats?.ftmAmount : '-.--'} FTM
+                  {tombLPStats?.tokenAmount ? tombLPStats?.tokenAmount : '-.--'} CBD /{' '}
+                  {tombLPStats?.ftmAmount ? tombLPStats?.ftmAmount : '-.--'} ARB
                 </span>
               </Box>
               <Box>${tombLPStats?.priceOfOne ? tombLPStats.priceOfOne : '-.--'}</Box>
@@ -401,9 +399,9 @@ const Home = () => {
           </Card>
         </Grid>
         <Grid item xs={12} sm={6}>
-          <Card style={{ backgroundColor: "transparent", boxShadow: "none", border: "1px solid var(--white)" }}>
+          <Card style={{ backgroundColor: "transparent", boxShadow: "none", border: "1px solid blue" }}>
             <CardContent align="center">
-              <h2>3SHARES-WFTM Spooky LP</h2>
+              <h2>CBS-ARB TraderJoe LP</h2>
               <Box mt={2}>
                 <CardIcon>
                   <TokenSymbol symbol="TSHARE-FTM-LP" />
@@ -416,8 +414,8 @@ const Home = () => {
             </Box>*/}
               <Box mt={2}>
                 <span style={{ fontSize: '26px' }}>
-                  {tshareLPStats?.tokenAmount ? tshareLPStats?.tokenAmount : '-.--'} 3SHARE /{' '}
-                  {tshareLPStats?.ftmAmount ? tshareLPStats?.ftmAmount : '-.--'} FTM
+                  {tshareLPStats?.tokenAmount ? tshareLPStats?.tokenAmount : '-.--'} CBS /{' '}
+                  {tshareLPStats?.ftmAmount ? tshareLPStats?.ftmAmount : '-.--'} ARB
                 </span>
               </Box>
               <Box>${tshareLPStats?.priceOfOne ? tshareLPStats.priceOfOne : '-.--'}</Box>

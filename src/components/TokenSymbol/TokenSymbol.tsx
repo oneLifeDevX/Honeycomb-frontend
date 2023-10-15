@@ -1,16 +1,16 @@
 import React from 'react';
 
 //Graveyard ecosystem logos
-import tombLogo from '../../assets/img/3OMB.svg';
-import tShareLogo from '../../assets/img/3SHARES.svg';
-import tombLogoPNG from '../../assets/img/3OMB.png';
-import tShareLogoPNG from '../../assets/img/3SHARES.png';
-import tBondLogo from '../../assets/img/3BOND-01.png';
+import tombLogo from '../../assets/img/bank.png';
+import tShareLogo from '../../assets/img/bank.png';
+import tombLogoPNG from '../../assets/img/bank.png';
+import tShareLogoPNG from '../../assets/img/bank.png';
+import tBondLogo from '../../assets/img/bank.png';
 
-import tombFtmLpLogo from '../../assets/img/tomb_ftm_lp.png';
-import tshareFtmLpLogo from '../../assets/img/tshare_ftm_lp.png';
+import tombFtmLpLogo from '../../assets/img/CBD_ARB_lp.png';
+import tshareFtmLpLogo from '../../assets/img/CBD_ARB_lp.png';
 
-import wftmLogo from '../../assets/img/fantom-ftm-logo.png';
+import wftmLogo from '../../assets/img/arb.png';
 import booLogo from '../../assets/img/spooky.png';
 import belugaLogo from '../../assets/img/BELUGA.png';
 import twoshareLogo from '../../assets/img/t_2SHARE-01.png';
@@ -35,7 +35,7 @@ const logosBySymbol: { [title: string]: string } = {
   TSHAREPNG: tShareLogoPNG,
   TSHARE: tShareLogo,
   TBOND: tBondLogo,
-  WFTM: wftmLogo,
+  ETH: wftmLogo,
   BOO: booLogo,
   SHIBA: shibaLogo,
   ZOO: zooLogo,
@@ -67,6 +67,11 @@ const TokenSymbol: React.FC<LogoProps> = ({ symbol, size = 64 }) => {
   if (!logosBySymbol[symbol]) {
     return <img src={logosBySymbol['TOMB']} alt={`${symbol} Logo`} width={size} height={size} />
     // throw new Error(`Invalid Token Logo symbol: ${symbol}`);
+  }
+  if (symbol === 'ETH') {
+    // Spécifiez la taille souhaitée pour le logo ETH ici (par exemple, 96 pixels)
+    const ethSize = 100;
+    return <img src={logosBySymbol[symbol]} alt={`${symbol} Logo`} width={270} height={ethSize} />;
   }
   return <img src={logosBySymbol[symbol]} alt={`${symbol} Logo`} width={size} height={size} />;
 };

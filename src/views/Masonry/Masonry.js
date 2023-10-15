@@ -78,8 +78,8 @@ const Masonry = () => {
       <BackgroundImage />
       {!!account ? (
         <>
-          <Typography color="textPrimary" align="center" variant="h3" gutterBottom>
-            3Room
+          <Typography color="#00000" align="center" variant="h3" gutterBottom>
+            Room
           </Typography>
           <Box mt={5}>
             <Grid container justify="center" spacing={3}>
@@ -103,7 +103,7 @@ const Masonry = () => {
                 <Card className={classes.gridItem}>
                   <CardContent align="center">
                     <Typography>
-                      3OMB Price<small> (TWAP)</small>
+                      CBD Price<small> (TWAP)</small>
                     </Typography>
                     <Typography>{rebateStats.tombPrice.toFixed(4)} FTM</Typography>
                   </CardContent>
@@ -120,7 +120,7 @@ const Masonry = () => {
               <Grid item xs={12} md={2} lg={2}>
                 <Card className={classes.gridItem}>
                   <CardContent align="center">
-                    <Typography>3SHARES Staked</Typography>
+                    <Typography>CBS Staked</Typography>
                     <Typography>{getDisplayBalance(totalStaked)}</Typography>
                   </CardContent>
                 </Card>
